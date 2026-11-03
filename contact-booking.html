@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Service Booking Enquiry | SPARK FIX</title>
+  <meta name="description" content="Submit an electrical service enquiry or consultation request to SPARK FIX. Residential and commercial installations, safety inspections, and urgent assistance.">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom Design System CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Credibility & Urgent Contact Bar -->
+  <div class="top-contact-bar d-none d-md-block">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-4">
+          <span><i class="bi bi-shield-check text-warning me-1"></i> Licensed Contractor &amp; Engineering Standards</span>
+          <span><i class="bi bi-geo-alt me-1"></i> Serving Metro District &amp; Commercial Corridors</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <span><i class="bi bi-clock me-1"></i> Mon–Fri: 7:00 AM – 6:00 PM</span>
+          <span class="text-white-50">|</span>
+          <a href="tel:8005557727" class="fw-semibold text-white"><i class="bi bi-telephone-fill text-warning me-1"></i> (800) 555-SPARK</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mandatory Navbar -->
+  <nav class="navbar navbar-expand-lg spark-navbar" aria-label="Main Navigation">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a class="spark-brand" href="index.html">
+        <div class="brand-icon-wrapper">
+          <i class="bi bi-lightning-charge-fill"></i>
+        </div>
+        <div>
+          <span class="brand-text-spark">SPARK</span><span class="brand-text-fix">FIX</span>
+          <span class="brand-tagline-sub">Electrical Services</span>
+        </div>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sparkNavbarNav" aria-controls="sparkNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Items -->
+      <div class="collapse navbar-collapse" id="sparkNavbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-safety.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html#residential">Residential</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html#commercial">Commercial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service-areas-emergency.html">Service Areas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-safety.html#certifications">Safety &amp; Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact-booking.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Sign Up</a>
+          </li>
+        </ul>
+
+        <!-- Mandatory CTAs -->
+        <div class="navbar-cta-group">
+          <a href="contact-booking.html" class="btn btn-electric btn-sm">
+            <i class="bi bi-calendar2-check"></i> Book a Service
+          </a>
+          <a href="service-areas-emergency.html#emergency" class="btn btn-emergency btn-sm">
+            <i class="bi bi-exclamation-triangle-fill"></i> Emergency Help
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header Banner -->
+  <header class="page-banner">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-2">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact &amp; Booking Enquiry</li>
+        </ol>
+      </nav>
+      <h1 class="fw-bold">Service Booking &amp; Technical Enquiry</h1>
+      <p class="text-white-50 mb-0" style="max-width: 650px;">
+        Submit your project details for technical evaluation. Our coordination team will review your specifications, verify contractor credentials, and confirm scheduling arrangements.
+      </p>
+    </div>
+  </header>
+
+  <!-- Operating Clarification Callout -->
+  <section class="bg-white border-bottom py-3">
+    <div class="container">
+      <div class="alert alert-light border d-flex align-items-center justify-content-between flex-wrap gap-2 mb-0">
+        <div class="d-flex align-items-center gap-2">
+          <i class="bi bi-shield-check text-primary fs-5"></i>
+          <span class="small text-charcoal">
+            <strong>Booking Enquiry Workflow:</strong> Submitting this form initiates technical scope review and scheduling coordination. It is an enquiry process — site visits and electrician dispatch are officially confirmed only after technical validation by our coordinator.
+          </span>
+        </div>
+        <a href="service-areas-emergency.html#emergency" class="btn btn-sm btn-outline-danger">Emergency Intake Help</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Booking & Contact Section -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Left Column: Contractor Contact Details, Office Hours & Map Info -->
+        <div class="col-lg-5">
+          <span class="section-subtitle">Direct Correspondence</span>
+          <h2 class="h3 fw-bold text-navy mb-4">Contact Our Service Operations Desk</h2>
+          
+          <p class="text-muted mb-4">
+            Whether you need a full commercial switchboard upgrade, residential rewiring, or a certified statutory safety inspection, our engineering coordinators are here to assist.
+          </p>
+
+          <!-- Contact Cards -->
+          <div class="vstack gap-3 mb-4">
+            <div class="p-3 bg-white border rounded d-flex align-items-start gap-3">
+              <div class="trust-icon-box" style="width:42px;height:42px;">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold text-navy mb-1">Operations Headquarters</h6>
+                <p class="small text-muted mb-0">400 Industrial Parkway, Suite 102<br>Metro Hub Technology District, MP 90210</p>
+              </div>
+            </div>
+
+            <div class="p-3 bg-white border rounded d-flex align-items-start gap-3">
+              <div class="trust-icon-box" style="width:42px;height:42px;">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold text-navy mb-1">Telephone Contacts</h6>
+                <div class="small text-muted">General Enquiries: <a href="tel:8005557727" class="fw-semibold text-navy">(800) 555-SPARK</a></div>
+                <div class="small text-muted">Direct Operations: <a href="tel:8005557727" class="text-muted">(800) 555-7727</a></div>
+              </div>
+            </div>
+
+            <div class="p-3 bg-white border rounded d-flex align-items-start gap-3">
+              <div class="trust-icon-box" style="width:42px;height:42px;">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold text-navy mb-1">Electronic Mail</h6>
+                <div class="small text-muted">Technical Scopes: <span class="text-navy fw-semibold">enquiries@sparkfix-electrical.com</span></div>
+                <div class="small text-muted">Billing &amp; Contracts: <span class="text-muted">accounts@sparkfix-electrical.com</span></div>
+              </div>
+            </div>
+
+            <div class="p-3 bg-white border rounded d-flex align-items-start gap-3">
+              <div class="trust-icon-box" style="width:42px;height:42px;">
+                <i class="bi bi-clock-history"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold text-navy mb-1">Operating Hours</h6>
+                <div class="small text-muted"><strong>Monday – Friday:</strong> 7:00 AM – 6:00 PM</div>
+                <div class="small text-muted"><strong>Saturday:</strong> 8:00 AM – 2:00 PM (Scheduled works)</div>
+                <div class="small text-danger fw-semibold mt-1"><strong>Urgent Safety Triage:</strong> Handled by availability</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Verification Badge Box -->
+          <div class="verification-placeholder-box mb-4">
+            <div class="d-flex align-items-start gap-2">
+              <i class="bi bi-patch-check-fill text-primary fs-5 mt-1"></i>
+              <div>
+                <strong class="text-navy d-block">Official Licensing Identifier</strong>
+                <span>Contractor Registration: [Placeholder: Lic #EC-98442 — Pending Direct Registry Link]. Full comprehensive public liability coverage maintained.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media & Networks -->
+          <div>
+            <h6 class="fw-bold text-navy mb-2">Connect With SPARK FIX</h6>
+            <div class="d-flex gap-2">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-navy" aria-label="LinkedIn Profile">
+                <i class="bi bi-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-navy" aria-label="Twitter X Profile">
+                <i class="bi bi-twitter-x"></i> X / Twitter
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-navy" aria-label="Facebook Page">
+                <i class="bi bi-facebook"></i> Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Structured Booking Enquiry Form -->
+        <div class="col-lg-7">
+          <div class="form-card">
+            <span class="badge-custom badge-electric mb-2">Technical Intake Form</span>
+            <h3 class="h4 fw-bold text-navy mb-1">Submit Your Service Booking Enquiry</h3>
+            <p class="small text-muted mb-4">Fill out the form below. Required fields are marked with an asterisk (*).</p>
+
+            <form id="electricalBookingForm" novalidate>
+              <!-- Hidden Property Type sync input -->
+              <input type="hidden" id="selectedPropertyType" name="propertyType" value="residential">
+
+              <!-- Sector Toggle (Residential vs Commercial) -->
+              <label class="form-label">Sector Classification *</label>
+              <div class="service-type-toggle">
+                <button type="button" class="type-toggle-btn active" data-type="residential">
+                  <i class="bi bi-house-door-fill"></i> Residential Property
+                </button>
+                <button type="button" class="type-toggle-btn" data-type="commercial">
+                  <i class="bi bi-buildings-fill"></i> Commercial Facility
+                </button>
+              </div>
+
+              <!-- Row: Name and Email -->
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label for="clientFullName" class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" id="clientFullName" placeholder="e.g. Robert Hawkins" required>
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="clientEmail" class="form-label">Email Address *</label>
+                  <input type="email" class="form-control" id="clientEmail" placeholder="e.g. robert@company.com" required>
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+              </div>
+
+              <!-- Row: Phone and Service Type -->
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label for="clientPhone" class="form-label">Phone Number *</label>
+                  <input type="tel" class="form-control" id="clientPhone" placeholder="e.g. (555) 234-5678" required>
+                  <div class="invalid-feedback">Please provide a valid contact phone number.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="serviceTypeSelect" class="form-label">Service Type *</label>
+                  <select class="form-select" id="serviceTypeSelect" required>
+                    <option value="" selected disabled>Select primary service needed...</option>
+                    <option value="Electrical Installation">Electrical Installation</option>
+                    <option value="Electrical Repair">Electrical Repair</option>
+                    <option value="Wiring and Rewiring">Wiring and Rewiring</option>
+                    <option value="Lighting Installation">Lighting Installation</option>
+                    <option value="Electrical Panel and Breakers">Electrical Panel &amp; Circuit Breakers</option>
+                    <option value="Electrical Inspection">Electrical Inspection (EICR / Safety)</option>
+                    <option value="Preventive Maintenance">Preventive Maintenance</option>
+                    <option value="Emergency Assistance">Emergency Assistance</option>
+                    <option value="Other Enquiry">Other Electrical Enquiry</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a service type.</div>
+                </div>
+              </div>
+
+              <!-- Row: Service Location / Postcode -->
+              <div class="mb-3">
+                <label for="serviceLocation" class="form-label">Service Location / Address &amp; Postcode *</label>
+                <input type="text" class="form-control" id="serviceLocation" placeholder="e.g. 142 Riverbank Way, Westside Suburbs, MP 90212" required>
+                <div class="invalid-feedback">Please enter the location address or regional district.</div>
+              </div>
+
+              <!-- Row: Preferred Date & Time Window -->
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label for="preferredDate" class="form-label">Preferred Date *</label>
+                  <input type="date" class="form-control" id="preferredDate" required>
+                  <div class="invalid-feedback">Please select a preferred service date.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="preferredTime" class="form-label">Preferred Time Window *</label>
+                  <select class="form-select" id="preferredTime" required>
+                    <option value="" selected disabled>Select time slot...</option>
+                    <option value="Morning (8:00 AM - 12:00 PM)">Morning (8:00 AM – 12:00 PM)</option>
+                    <option value="Afternoon (12:00 PM - 4:00 PM)">Afternoon (12:00 PM – 4:00 PM)</option>
+                    <option value="Late Afternoon (4:00 PM - 6:00 PM)">Late Afternoon (4:00 PM – 6:00 PM)</option>
+                    <option value="Urgent Slot (Earliest Coordinator Allocation)">Urgent Slot (Earliest Available)</option>
+                  </select>
+                  <div class="invalid-feedback">Please choose a preferred time slot.</div>
+                </div>
+              </div>
+
+              <!-- Describe Electrical Issue -->
+              <div class="mb-3">
+                <label for="issueDescription" class="form-label">Describe the Electrical Issue or Scope *</label>
+                <textarea class="form-control" id="issueDescription" rows="4" placeholder="Detail symptoms, approximate age of installation, observed anomalies (buzzing, tripping, discoloration), or specific additions required..." required></textarea>
+                <div class="invalid-feedback">Please provide a description of the electrical work required.</div>
+              </div>
+
+              <!-- Upload Optional Reference Image -->
+              <div class="mb-4">
+                <label class="form-label">Optional Reference Photo</label>
+                <div class="small text-muted mb-2">Upload a clear photo of your service panel, circuit board, or affected fixture (Max 5MB).</div>
+                
+                <input type="file" id="bookingImageUpload" class="d-none" accept="image/*">
+                
+                <div class="file-upload-dropzone" id="fileUploadDropzone">
+                  <i class="bi bi-cloud-arrow-up text-primary fs-2 mb-2 d-inline-block"></i>
+                  <div class="fw-semibold text-navy">Click or drag and drop reference image here</div>
+                  <div class="small text-muted">Supports JPG, PNG, WEBP (Max 5MB)</div>
+                </div>
+
+                <!-- Preview container (Hidden until file selected) -->
+                <div id="filePreviewContainer" class="d-none">
+                  <div class="file-preview-wrap">
+                    <img id="previewThumbnail" src="" alt="Thumbnail preview" style="width: 48px; height: 48px; object-fit: cover; border-radius: 4px;">
+                    <div class="flex-grow-1 overflow-hidden">
+                      <div class="fw-semibold small text-truncate text-navy" id="previewFileName">filename.jpg</div>
+                      <div class="small text-muted" id="previewFileSize">1.2 MB</div>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-danger" id="removeUploadedFileBtn" title="Remove image">
+                      <i class="bi bi-trash"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Disclaimer Checkbox -->
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="termsAcknowledgement" required>
+                <label class="form-check-label small text-muted" for="termsAcknowledgement">
+                  I understand that this form is a <strong>booking enquiry</strong>, not an automatic instant appointment. An electrical service coordinator will review technical specifications and contact me to confirm scheduling and electrician availability. *
+                </label>
+                <div class="invalid-feedback">You must acknowledge the booking enquiry workflow to proceed.</div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-electric btn-lg w-100">
+                <i class="bi bi-send-check me-1"></i> Submit Service Booking Enquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Submission Confirmation Modal -->
+  <div class="modal fade" id="bookingConfirmationModal" tabindex="-1" aria-labelledby="bookingConfirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-navy text-white">
+          <h5 class="modal-title fw-bold" id="bookingConfirmationModalLabel">
+            <i class="bi bi-check2-circle text-success me-2"></i> Booking Enquiry Received
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <div class="rounded-circle bg-success bg-opacity-10 text-success d-inline-flex align-items-center justify-content-center mb-3" style="width: 64px; height: 64px; font-size: 2rem;">
+            <i class="bi bi-clipboard-check"></i>
+          </div>
+          
+          <h4 class="fw-bold text-navy mb-1">Thank You, <span id="modalClientName">Customer</span></h4>
+          <p class="text-muted small mb-3">Your electrical service enquiry has been successfully logged into our triage dispatch queue.</p>
+          
+          <div class="p-3 bg-light border rounded mb-3">
+            <span class="small text-muted d-block">Enquiry Reference Number</span>
+            <span class="fs-4 fw-bold text-primary font-heading" id="modalEnquiryRef">#SF-984421</span>
+          </div>
+
+          <div class="text-start p-3 border rounded bg-white small mb-3">
+            <strong class="text-navy d-block mb-1"><i class="bi bi-clock-history me-1 text-primary"></i> What Happens Next:</strong>
+            <ol class="ps-3 mb-0 text-muted vstack gap-1">
+              <li>Our technical coordinator reviews your scope and property classification.</li>
+              <li>We verify credentialed electrician availability in your coverage sector.</li>
+              <li>We contact you by phone/email to confirm the appointment and provide clear pricing guidance.</li>
+            </ol>
+          </div>
+
+          <div class="alert alert-warning small text-start mb-0">
+            <strong>Urgent Safety Reminder:</strong> If your situation develops into sparking, active smoke, or hazardous voltage exposure, follow emergency protocols and contact local emergency fire services immediately.
+          </div>
+        </div>
+        <div class="modal-footer bg-light justify-content-between">
+          <a href="service-areas-emergency.html#emergency" class="btn btn-sm btn-outline-danger">Emergency Guidance</a>
+          <button type="button" class="btn btn-sm btn-navy" data-bs-dismiss="modal">Close &amp; Return</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Standard Contractor Footer -->
+  <footer class="spark-footer">
+    <div class="container">
+      <!-- Compliance & Regulatory Disclaimer Note -->
+      <div class="compliance-disclaimer-note">
+        <div class="d-flex align-items-start gap-2">
+          <i class="bi bi-info-circle text-info fs-5 mt-1"></i>
+          <div>
+            <strong class="text-white">Professional Operating Disclosure:</strong> SPARK FIX provides professional electrical contracting services adhering to statutory national electrical safety codes. Website submissions constitute formal booking enquiries subject to technical assessment, safety scope determination, and contractor availability. All field work is performed by qualified personnel using verified safe-isolation procedures.
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4">
+          <div class="footer-brand-title d-flex align-items-center gap-2">
+            <div class="brand-icon-wrapper" style="width:34px;height:34px;font-size:1rem;">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <span>SPARK<span class="text-primary">FIX</span></span>
+          </div>
+          <p class="small text-white-50 mb-3">Powering Your Spaces. Protecting What Matters.</p>
+          <p class="small text-white-50 mb-3">Dedicated residential and commercial electrical contracting, installations, compliance audits, and urgent technical support.</p>
+          <div class="d-flex gap-2 text-white-50">
+            <span class="badge-custom badge-placeholder text-white-50">Licence: Placeholder #EC-98442</span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-nav">
+            <li><a href="services.html#residential">Residential Wiring</a></li>
+            <li><a href="services.html#commercial">Commercial Fit-Outs</a></li>
+            <li><a href="services.html#residential">Panel Upgrades</a></li>
+            <li><a href="services.html#commercial">Lighting &amp; Power</a></li>
+            <li><a href="services.html#commercial">Periodic Inspections</a></li>
+            <li><a href="service-areas-emergency.html#emergency">Emergency Intake</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-nav">
+            <li><a href="about-safety.html">About Spark Fix</a></li>
+            <li><a href="about-safety.html#team">Our Electricians</a></li>
+            <li><a href="about-safety.html#certifications">Safety &amp; Compliance</a></li>
+            <li><a href="service-areas-emergency.html">Service Areas</a></li>
+            <li><a href="contact-booking.html">Booking Enquiry</a></li>
+            <li><a href="coming-soon.html">EV Charging Expansion</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <h4 class="footer-heading">Contact &amp; Emergency</h4>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong class="text-white d-block">Headquarters &amp; Operations Center</strong>
+              <span class="text-white-50">400 Industrial Parkway, Suite 102, Metro Hub</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <div>
+              <strong class="text-white d-block">General Enquiries &amp; Scheduling</strong>
+              <a href="tel:8005557727" class="text-white-50">(800) 555-SPARK / (800) 555-7727</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <div>
+              <strong class="text-white d-block">Email Correspondence</strong>
+              <span class="text-white-50">enquiries@sparkfix-electrical.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 SPARK FIX Electrical Services. All rights reserved.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="contact-booking.html" class="text-white-50">Privacy Statement</a>
+          <a href="contact-booking.html" class="text-white-50">Terms of Engagement</a>
+          <a href="about-safety.html#safety" class="text-white-50">Safety Charter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
