@@ -62,7 +62,13 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 130px;
   font-size: 16px;
+}
+
+section[id],
+div[id] {
+  scroll-margin-top: 130px;
 }
 
 body {
@@ -217,6 +223,19 @@ img {
   background-color: #ffffff;
   color: var(--color-navy);
   border-color: #ffffff;
+}
+
+.bg-navy {
+  background: linear-gradient(135deg, #14283D 0%, #0D1C2C 100%) !important;
+  color: #ffffff !important;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.border-white-15 {
+  border-color: rgba(255, 255, 255, 0.15) !important;
 }
 
 /* ==========================================================================
@@ -505,6 +524,12 @@ img {
   color: #ffffff;
   font-size: 2.4rem;
   margin-bottom: 0.5rem;
+}
+
+.page-banner p {
+  color: rgba(255, 255, 255, 0.92) !important;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 .page-banner .breadcrumb-item a {
@@ -1121,14 +1146,82 @@ img {
 }
 
 /* ==========================================================================
-   AUTHENTICATION PAGES (LOGIN & SIGN UP)
+   AUTHENTICATION PAGES (STANDALONE CENTERED BOX)
    ========================================================================== */
 .auth-wrapper {
-  min-height: calc(100vh - 180px);
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 3.5rem 0;
+  justify-content: center;
+  padding: 3rem 1.25rem;
   background-color: var(--color-light-grey);
+}
+
+.auth-standalone-card {
+  width: 100%;
+  max-width: 480px;
+  background-color: #ffffff;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 16px 36px rgba(20, 40, 61, 0.09);
+  padding: 2.75rem 2.25rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .auth-standalone-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.auth-divider-line {
+  position: relative;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.auth-divider-line::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--color-border);
+}
+
+.auth-divider-text {
+  position: relative;
+  background-color: #ffffff;
+  padding: 0 0.85rem;
+  font-size: 0.8rem;
+  color: var(--color-muted-slate);
+  font-weight: 500;
+}
+
+.btn-auth-social {
+  border: 1px solid var(--color-border);
+  background-color: #ffffff;
+  color: var(--color-navy);
+  font-weight: 600;
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-auth-social:hover {
+  background-color: var(--color-warm-white);
+  border-color: var(--color-electric);
+  color: var(--color-electric);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
 }
 
 .auth-card {
@@ -1286,18 +1379,19 @@ img {
 }
 
 /* ==========================================================================
-   FOOTER
+   FOOTER (CLEAN WHITE THEME)
    ========================================================================== */
 .spark-footer {
-  background-color: var(--color-navy-deep);
-  color: #A0B2C6;
+  background-color: #ffffff;
+  color: var(--color-muted-slate);
   padding-top: 4.5rem;
   padding-bottom: 2rem;
-  border-top: 1px solid var(--color-border-dark);
+  border-top: 1px solid var(--color-border);
+  box-shadow: 0 -4px 25px rgba(20, 40, 61, 0.04);
 }
 
 .footer-brand-title {
-  color: #ffffff;
+  color: var(--color-navy);
   font-family: var(--font-heading);
   font-size: 1.4rem;
   font-weight: 700;
@@ -1305,7 +1399,7 @@ img {
 }
 
 .footer-heading {
-  color: #ffffff;
+  color: var(--color-navy);
   font-family: var(--font-heading);
   font-size: 1.05rem;
   font-weight: 600;
@@ -1324,14 +1418,14 @@ img {
 }
 
 .footer-nav a {
-  color: #A0B2C6;
+  color: var(--color-muted-slate);
   font-size: 0.9rem;
   transition: color var(--transition-fast), padding-left var(--transition-fast);
   display: inline-block;
 }
 
 .footer-nav a:hover {
-  color: #ffffff;
+  color: var(--color-electric);
   padding-left: 4px;
 }
 
@@ -1341,6 +1435,7 @@ img {
   gap: 0.75rem;
   margin-bottom: 0.85rem;
   font-size: 0.9rem;
+  color: var(--color-charcoal);
 }
 
 .footer-contact-item i {
@@ -1349,23 +1444,71 @@ img {
   margin-top: 2px;
 }
 
+.footer-social-group {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-warm-white);
+  color: var(--color-navy);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  transition: all var(--transition-fast);
+  border: 1px solid var(--color-border);
+  text-decoration: none;
+}
+
+.footer-social-link:hover {
+  background-color: var(--color-electric);
+  color: #ffffff;
+  border-color: var(--color-electric);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(40, 120, 199, 0.3);
+}
+
 .footer-bottom-bar {
   margin-top: 3.5rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--color-border);
   font-size: 0.825rem;
-  color: #7A8E9F;
+  color: var(--color-muted-slate);
 }
 
 .compliance-disclaimer-note {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--color-warm-white);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: 1rem 1.25rem;
-  font-size: 0.8rem;
+  font-size: 0.825rem;
   line-height: 1.5;
-  color: #94A3B8;
-  margin-bottom: 2rem;
+  color: var(--color-muted-slate);
+  margin-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+   CONTACT MAP CONTAINER
+   ========================================================================== */
+.contact-map-wrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  background-color: #ffffff;
+}
+
+.contact-map-wrapper iframe {
+  width: 100%;
+  height: 360px;
+  border: 0;
+  display: block;
 }
 
 /* ==========================================================================
@@ -1411,6 +1554,161 @@ img {
   line-height: 1;
   letter-spacing: -0.05em;
   margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   CARD HEADING, SUB-HEADING & TEXT LINE CONSISTENCY SYSTEM
+   ========================================================================== */
+.card-line-heading {
+  display: block !important;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-navy);
+  line-height: 1.3;
+}
+.card-line-heading.text-danger {
+  color: #DC2626 !important;
+}
+.card-line-heading.text-success {
+  color: #16A34A !important;
+}
+
+.card-line-subheading {
+  display: block !important;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0.65rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--color-electric);
+  line-height: 1.4;
+}
+.card-line-subheading.text-danger {
+  color: #DC2626 !important;
+}
+.card-line-subheading.text-success {
+  color: #16A34A !important;
+}
+.card-line-subheading .badge-custom {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.card-line-text {
+  display: block !important;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-muted-slate);
+  line-height: 1.55;
+}
+
+/* ==========================================================================
+   TABLET & 1024px RESPONSIVE CARD GRID LAYOUT
+   Align 2 cards in one row and last odd number card in center
+   ========================================================================== */
+@media (min-width: 768px) and (max-width: 1024.98px) {
+  /* Ensure card grid rows center their flex children */
+  .card-grid-row,
+  .trust-strip .row,
+  .section-padding .row.g-4,
+  #areaCardsContainer,
+  #residential .row.g-4,
+  #commercial .row.g-4,
+  #certifications .row.g-4,
+  #team .row.g-4,
+  .row:has(.service-card),
+  .row:has(.team-card),
+  .row:has(.cert-card),
+  .row:has(.coverage-pill-card),
+  .row:has(.step-item),
+  .row:has(.testimonial-card),
+  .row:has(.feature-card) {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  /* Force 2 cards per row (50% each) on tablet and 1024px */
+  .card-grid-row > [class*="col-"],
+  .card-grid-row > div,
+  .card-grid-col,
+  .service-area-item,
+  .testimonial-col,
+  .step-card-col,
+  .trust-strip .col-6,
+  .trust-strip .col-lg-3,
+  #areaCardsContainer .col-md-6,
+  #residential .col-lg-6,
+  #commercial .col-lg-6,
+  #certifications .col-md-6,
+  #certifications .col-lg-4,
+  #team .col-sm-6,
+  #team .col-lg-3,
+  .row:has(.service-card) > [class*="col-"],
+  .row:has(.team-card) > [class*="col-"],
+  .row:has(.cert-card) > [class*="col-"],
+  .row:has(.coverage-pill-card) > [class*="col-"],
+  .row:has(.step-item) > [class*="col-"],
+  .row:has(.testimonial-card) > [class*="col-"],
+  .row:has(.feature-card) > [class*="col-"] {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+  }
+
+  /* Full width alerts, hero or banner blocks stay 100% */
+  .row > .col-12,
+  .emergency-alert-card,
+  .cta-banner,
+  .col-lg-10,
+  .col-xl-9 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Center the last odd card horizontally */
+  .card-grid-row > div:last-child:nth-child(odd),
+  .card-grid-row > [class*="col-"]:last-child:nth-child(odd),
+  .card-grid-col:last-child:nth-child(odd),
+  .service-area-item:last-child:nth-child(odd),
+  .testimonial-col:last-child:nth-child(odd),
+  .step-card-col:last-child:nth-child(odd),
+  #areaCardsContainer > div:last-child:nth-child(odd),
+  #certifications .row > div:last-child:nth-child(odd),
+  #team .row > div:last-child:nth-child(odd),
+  .row:has(.service-card) > [class*="col-"]:last-child:nth-child(odd),
+  .row:has(.team-card) > [class*="col-"]:last-child:nth-child(odd),
+  .row:has(.cert-card) > [class*="col-"]:last-child:nth-child(odd),
+  .row:has(.coverage-pill-card) > [class*="col-"]:last-child:nth-child(odd),
+  .row:has(.step-item) > [class*="col-"]:last-child:nth-child(odd),
+  .row:has(.testimonial-card) > [class*="col-"]:last-child:nth-child(odd),
+  .row:has(.feature-card) > [class*="col-"]:last-child:nth-child(odd) {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Stack service card media on top in tablet/1024px so text has full width */
+  .service-card .row.align-items-center {
+    flex-direction: column !important;
+  }
+  .service-card .col-sm-5,
+  .service-card .col-sm-7 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  .service-card .rounded.overflow-hidden {
+    height: 190px !important;
+    margin-bottom: 1rem;
+  }
 }
 
 /* ==========================================================================

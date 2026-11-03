@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Customer Portal Login | SPARK FIX</title>
   <meta name="description" content="Sign in to your SPARK FIX account to review service requests, inspection documentation, and contractor appointments.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,263 +14,115 @@
   <!-- Custom Design System CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
 
-  <!-- Top Credibility & Urgent Contact Bar -->
-  <div class="top-contact-bar d-none d-md-block">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center gap-4">
-          <span><i class="bi bi-shield-check text-warning me-1"></i> Licensed Contractor &amp; Engineering Standards</span>
-          <span><i class="bi bi-geo-alt me-1"></i> Serving Metro District &amp; Commercial Corridors</span>
-        </div>
-        <div class="d-flex align-items-center gap-3">
-          <span><i class="bi bi-clock me-1"></i> Mon–Fri: 7:00 AM – 6:00 PM</span>
-          <span class="text-white-50">|</span>
-          <a href="tel:8005557727" class="fw-semibold text-white"><i class="bi bi-telephone-fill text-warning me-1"></i> (800) 555-SPARK</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Mandatory Navbar -->
-  <nav class="navbar navbar-expand-lg spark-navbar" aria-label="Main Navigation">
-    <div class="container">
-      <!-- Brand Logo -->
-      <a class="spark-brand" href="index.html">
-        <div class="brand-icon-wrapper">
-          <i class="bi bi-lightning-charge-fill"></i>
-        </div>
-        <div>
-          <span class="brand-text-spark">SPARK</span><span class="brand-text-fix">FIX</span>
-          <span class="brand-tagline-sub">Electrical Services</span>
-        </div>
-      </a>
-
-      <!-- Mobile Hamburger Toggle -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sparkNavbarNav" aria-controls="sparkNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Nav Items -->
-      <div class="collapse navbar-collapse" id="sparkNavbarNav">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about-safety.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html#residential">Residential</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html#commercial">Commercial</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="service-areas-emergency.html">Service Areas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about-safety.html#certifications">Safety &amp; Certifications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact-booking.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="login.html">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="signup.html">Sign Up</a>
-          </li>
-        </ul>
-
-        <!-- Mandatory CTAs -->
-        <div class="navbar-cta-group">
-          <a href="contact-booking.html" class="btn btn-electric btn-sm">
-            <i class="bi bi-calendar2-check"></i> Book a Service
-          </a>
-          <a href="service-areas-emergency.html#emergency" class="btn btn-emergency btn-sm">
-            <i class="bi bi-exclamation-triangle-fill"></i> Emergency Help
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Login Main Content -->
+  <!-- Standalone Authentication Layout (No Navbar, No Footer, Centered Box) -->
   <main class="auth-wrapper">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-9 col-lg-10">
-          <div class="auth-card">
-            <div class="row g-0">
-              <!-- Left Sidebar Hero -->
-              <div class="col-md-5 d-none d-md-block">
-                <div class="auth-sidebar-hero">
-                  <div>
-                    <div class="d-flex align-items-center gap-2 mb-4">
-                      <div class="brand-icon-wrapper" style="width: 32px; height: 32px; font-size: 1rem;">
-                        <i class="bi bi-lightning-charge-fill"></i>
-                      </div>
-                      <span class="fw-bold fs-5 text-white">SPARK<span class="text-primary">FIX</span></span>
-                    </div>
+      <div class="auth-standalone-card">
+        <!-- Brand Name Placed Inside the Box in Top Center -->
+        <div class="text-center mb-4">
+          <a class="spark-brand d-inline-flex justify-content-center" href="index.html">
+            <div class="brand-icon-wrapper">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <div class="text-start">
+              <span class="brand-text-spark">SPARK</span><span class="brand-text-fix">FIX</span>
+              <span class="brand-tagline-sub">Electrical Services</span>
+            </div>
+          </a>
+        </div>
 
-                    <span class="badge-custom badge-safety mb-3">Customer Access</span>
-                    <h3 class="text-white fw-bold mb-3">Service Enquiries &amp; Audit Records</h3>
-                    <p class="text-white-50 small mb-0">
-                      Sign in to track ongoing booking scopes, review statutory EICR condition certificates, and manage multi-site properties.
-                    </p>
-                  </div>
+        <!-- Heading & Subtitle -->
+        <div class="text-center mb-4">
+          <h1 class="h4 fw-bold text-navy mb-1">Sign In to Your Account</h1>
+          <p class="small text-muted mb-0">Enter your credentials to access your account profile.</p>
+        </div>
 
-                  <div class="pt-4 border-top border-white-15">
-                    <div class="small text-white-50 mb-1">
-                      <i class="bi bi-shield-lock-fill text-warning me-1"></i> Encrypted Credentials
-                    </div>
-                    <div class="small text-white-50" style="font-size: 0.75rem;">
-                      Operating in strict accordance with industry data privacy standards.
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <!-- Feedback Alert Box -->
+        <div id="loginFeedbackAlert" class="alert d-none small" role="alert"></div>
 
-              <!-- Right Form Content -->
-              <div class="col-md-7">
-                <div class="auth-form-content">
-                  <div class="mb-4">
-                    <span class="section-subtitle">Account Portal</span>
-                    <h2 class="h3 fw-bold text-navy mb-1">Sign In to Your Account</h2>
-                    <p class="small text-muted mb-0">Enter your credentials to access your account profile.</p>
-                  </div>
+        <form id="sparkLoginForm" novalidate>
+          <!-- Email Address -->
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email Address *</label>
+            <div class="input-group">
+              <span class="input-group-text bg-light text-muted border-end-0"><i class="bi bi-envelope"></i></span>
+              <input type="email" class="form-control border-start-0" id="loginEmail" placeholder="name@domain.com" required>
+            </div>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
 
-                  <!-- Feedback Alert Box -->
-                  <div id="loginFeedbackAlert" class="alert d-none small" role="alert"></div>
+          <!-- Password -->
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password *</label>
+            <div class="password-input-group">
+              <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
+              <button type="button" class="password-toggle-btn" data-target="loginPassword" aria-label="Toggle password visibility">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+            <div class="invalid-feedback">Please provide your account password (minimum 6 characters).</div>
+          </div>
 
-                  <form id="sparkLoginForm" novalidate>
-                    <!-- Email -->
-                    <div class="mb-3">
-                      <label for="loginEmail" class="form-label">Email Address *</label>
-                      <div class="input-group">
-                        <span class="input-group-text bg-light text-muted border-end-0"><i class="bi bi-envelope"></i></span>
-                        <input type="email" class="form-control border-start-0" id="loginEmail" placeholder="name@domain.com" required>
-                      </div>
-                      <div class="invalid-feedback">Please enter a valid email address.</div>
-                    </div>
+          <!-- Remember Me & Forgot Password on the Same Line -->
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <div class="form-check mb-0">
+              <input class="form-check-input" type="checkbox" id="rememberMeCheckbox">
+              <label class="form-check-label small text-muted" for="rememberMeCheckbox">
+                Remember me
+              </label>
+            </div>
+            <a href="contact-booking.html" class="small text-primary fw-medium">Forgot Password?</a>
+          </div>
 
-                    <!-- Password -->
-                    <div class="mb-3">
-                      <div class="d-flex justify-content-between align-items-center mb-1">
-                        <label for="loginPassword" class="form-label mb-0">Password *</label>
-                        <a href="contact-booking.html" class="small text-primary">Forgot Password?</a>
-                      </div>
-                      <div class="password-input-group">
-                        <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
-                        <button type="button" class="password-toggle-btn" data-target="loginPassword" aria-label="Toggle password visibility">
-                          <i class="bi bi-eye"></i>
-                        </button>
-                      </div>
-                      <div class="invalid-feedback">Please provide your account password (minimum 6 characters).</div>
-                    </div>
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-electric btn-lg w-100 mb-3">
+            <i class="bi bi-box-arrow-in-right me-1"></i> Sign In to Account
+          </button>
 
-                    <!-- Remember Me -->
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="rememberMeCheckbox">
-                        <label class="form-check-label small text-muted" for="rememberMeCheckbox">
-                          Remember my session
-                        </label>
-                      </div>
-                    </div>
+          <!-- Divider -->
+          <div class="auth-divider-line">
+            <span class="auth-divider-text">Or continue with</span>
+          </div>
 
-                    <!-- Submit Button -->
-                    <button type="submit" class="btn btn-electric btn-lg w-100 mb-3">
-                      <i class="bi bi-box-arrow-in-right me-1"></i> Sign In to Account
-                    </button>
-
-                    <!-- Notice about demo environment -->
-                    <div class="p-2 bg-light border rounded text-center small text-muted mb-4">
-                      <i class="bi bi-info-circle me-1"></i> Frontend Demonstration Portal (Per project specifications, no backend customer dashboard is provisioned).
-                    </div>
-
-                    <!-- Link to Sign Up -->
-                    <div class="text-center small text-muted">
-                      Don't have an account yet? 
-                      <a href="signup.html" class="fw-semibold text-primary">Create an Account</a>
-                    </div>
-                  </form>
-                </div>
-              </div>
+          <!-- Google and Apple Social Icons at the Bottom -->
+          <div class="row g-2 mb-4">
+            <div class="col-6">
+              <button type="button" class="btn-auth-social w-100" onclick="alert('Google authentication integration in production environment.');">
+                <i class="bi bi-google text-danger fs-5"></i>
+                <span>Google</span>
+              </button>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn-auth-social w-100" onclick="alert('Apple authentication integration in production environment.');">
+                <i class="bi bi-apple text-dark fs-5"></i>
+                <span>Apple</span>
+              </button>
             </div>
           </div>
-        </div>
+
+          <!-- Notice about demo environment -->
+          <div class="p-2 bg-light border rounded text-center small text-muted mb-3" style="font-size: 0.775rem;">
+            <i class="bi bi-info-circle me-1"></i> Frontend Demonstration Portal (Per project specifications, no backend customer dashboard is provisioned).
+          </div>
+
+          <!-- Link to Sign Up -->
+          <div class="text-center small text-muted">
+            Don't have an account yet? 
+            <a href="signup.html" class="fw-semibold text-primary">Create an Account</a>
+          </div>
+
+          <!-- Back to Homepage -->
+          <div class="text-center mt-3 pt-2 border-top">
+            <a href="index.html" class="small text-muted text-decoration-none">
+              <i class="bi bi-arrow-left me-1"></i> Return to Homepage
+            </a>
+          </div>
+        </form>
       </div>
     </div>
   </main>
-
-  <!-- Standard Contractor Footer -->
-  <footer class="spark-footer">
-    <div class="container">
-      <div class="compliance-disclaimer-note">
-        <div class="d-flex align-items-start gap-2">
-          <i class="bi bi-info-circle text-info fs-5 mt-1"></i>
-          <div>
-            <strong class="text-white">Professional Operating Disclosure:</strong> SPARK FIX provides professional electrical contracting services adhering to statutory national electrical safety codes. Website submissions constitute formal booking enquiries subject to technical assessment, safety scope determination, and contractor availability.
-          </div>
-        </div>
-      </div>
-
-      <div class="row g-4 mb-4">
-        <div class="col-lg-4">
-          <div class="footer-brand-title d-flex align-items-center gap-2">
-            <div class="brand-icon-wrapper" style="width:34px;height:34px;font-size:1rem;">
-              <i class="bi bi-lightning-charge-fill"></i>
-            </div>
-            <span>SPARK<span class="text-primary">FIX</span></span>
-          </div>
-          <p class="small text-white-50 mb-3">Powering Your Spaces. Protecting What Matters.</p>
-          <span class="badge-custom badge-placeholder text-white-50">Licence: Placeholder #EC-98442</span>
-        </div>
-
-        <div class="col-6 col-md-3 col-lg-2">
-          <h4 class="footer-heading">Services</h4>
-          <ul class="footer-nav">
-            <li><a href="services.html#residential">Residential Wiring</a></li>
-            <li><a href="services.html#commercial">Commercial Fit-Outs</a></li>
-            <li><a href="services.html#residential">Panel Upgrades</a></li>
-            <li><a href="service-areas-emergency.html#emergency">Emergency Intake</a></li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-md-3 col-lg-2">
-          <h4 class="footer-heading">Quick Links</h4>
-          <ul class="footer-nav">
-            <li><a href="about-safety.html">About Spark Fix</a></li>
-            <li><a href="about-safety.html#certifications">Safety &amp; Compliance</a></li>
-            <li><a href="service-areas-emergency.html">Service Areas</a></li>
-            <li><a href="contact-booking.html">Booking Enquiry</a></li>
-          </ul>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <h4 class="footer-heading">Emergency Hotline</h4>
-          <p class="small text-white-50 mb-2">For urgent safety situations or intake coordination:</p>
-          <a href="tel:8005557727" class="btn btn-sm btn-emergency">
-            <i class="bi bi-telephone-fill me-1"></i> (800) 555-SPARK
-          </a>
-        </div>
-      </div>
-
-      <div class="footer-bottom-bar d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-        <div>&copy; 2026 SPARK FIX Electrical Services. All rights reserved.</div>
-        <div class="d-flex gap-3">
-          <a href="contact-booking.html" class="text-white-50">Privacy Statement</a>
-          <a href="contact-booking.html" class="text-white-50">Terms of Engagement</a>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <!-- Bootstrap 5 Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

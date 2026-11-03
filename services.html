@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Electrical Services — Residential &amp; Commercial | SPARK FIX</title>
   <meta name="description" content="Explore SPARK FIX's full spectrum of residential and commercial electrical services. From panel upgrades and home rewiring to commercial distribution and periodic inspections.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,23 +15,6 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Top Credibility & Urgent Contact Bar -->
-  <div class="top-contact-bar d-none d-md-block">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center gap-4">
-          <span><i class="bi bi-shield-check text-warning me-1"></i> Licensed Contractor &amp; Engineering Standards</span>
-          <span><i class="bi bi-geo-alt me-1"></i> Serving Metro District &amp; Commercial Corridors</span>
-        </div>
-        <div class="d-flex align-items-center gap-3">
-          <span><i class="bi bi-clock me-1"></i> Mon–Fri: 7:00 AM – 6:00 PM</span>
-          <span class="text-white-50">|</span>
-          <a href="tel:8005557727" class="fw-semibold text-white"><i class="bi bi-telephone-fill text-warning me-1"></i> (800) 555-SPARK</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Mandatory Navbar -->
   <nav class="navbar navbar-expand-lg spark-navbar" aria-label="Main Navigation">
@@ -64,52 +48,34 @@
             <a class="nav-link active" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html#residential">Residential</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html#commercial">Commercial</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="service-areas-emergency.html">Service Areas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about-safety.html#certifications">Safety &amp; Certifications</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact-booking.html">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="signup.html">Sign Up</a>
-          </li>
         </ul>
 
-        <!-- Mandatory CTAs -->
+        <!-- Retained Sign Up CTA Button -->
         <div class="navbar-cta-group">
-          <a href="contact-booking.html" class="btn btn-electric btn-sm">
-            <i class="bi bi-calendar2-check"></i> Book a Service
-          </a>
-          <a href="service-areas-emergency.html#emergency" class="btn btn-emergency btn-sm">
-            <i class="bi bi-exclamation-triangle-fill"></i> Emergency Help
+          <a href="signup.html" class="btn btn-electric btn-sm">
+            <i class="bi bi-person-plus-fill me-1"></i> Sign Up
           </a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Page Header Banner -->
-  <header class="page-banner">
+  <!-- Page Header Banner (Center-Aligned) -->
+  <header class="page-banner text-center">
     <div class="container">
-      <nav aria-label="breadcrumb">
+      <nav aria-label="breadcrumb" class="d-flex justify-content-center">
         <ol class="breadcrumb mb-2">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">Services</li>
         </ol>
       </nav>
-      <h1 class="fw-bold">Electrical Services Overview</h1>
-      <p class="text-white-50 mb-0" style="max-width: 650px;">
+      <h1 class="fw-bold text-center">Electrical Services Overview</h1>
+      <p class="text-white-50 mb-0 mx-auto text-center" style="max-width: 650px;">
         Thorough, code-compliant residential and commercial solutions executed with certified tools, safe-isolation standards, and technical integrity.
       </p>
     </div>
@@ -158,9 +124,9 @@
         <p class="section-desc">Comprehensive residential care engineered for personal safety, energy efficiency, and family protection. All work is tested and certified to national electrical codes.</p>
       </div>
 
-      <div class="row g-4">
+      <div class="row g-4 card-grid-row">
         <!-- 1. Electrical Installation -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -169,9 +135,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-electric mb-2">Residential Core</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Electrical Installation</h3>
-                <p class="small text-muted mb-2">Installation of complete electrical circuits for renovations, additions, garage power extensions, and new residential construction.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Electrical Installation</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-electric">Residential Core · Turnkey Systems</span></div>
+                <p class="card-line-text small text-muted mb-3">Installation of complete electrical circuits for renovations, additions, garage power extensions, and new residential construction.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> Home extensions, garage workshops, dedicated kitchen circuits.
@@ -192,7 +158,7 @@
         </div>
 
         <!-- 2. Home Wiring and Rewiring -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -201,9 +167,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-navy mb-2">Infrastructure</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Home Wiring &amp; Rewiring</h3>
-                <p class="small text-muted mb-2">Replacement of brittle legacy wiring, degraded cloth/knob-and-tube conductors, and complete copper re-cabling for modern power demands.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Home Wiring &amp; Rewiring</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-navy">Infrastructure · Copper Cabling</span></div>
+                <p class="card-line-text small text-muted mb-3">Replacement of brittle legacy wiring, degraded cloth/knob-and-tube conductors, and complete copper re-cabling for modern power demands.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> Homes over 30 years old, ungrounded outlets, frequent breaker trips.
@@ -224,7 +190,7 @@
         </div>
 
         <!-- 3. Lighting and Ceiling Fan Installation -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -233,9 +199,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-electric mb-2">Efficiency &amp; Design</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Lighting &amp; Ceiling Fans</h3>
-                <p class="small text-muted mb-2">Architectural recessed downlights, statement pendants, energy-efficient LED upgrades, and secure fan bracket installations.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Lighting &amp; Ceiling Fans</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-electric">Efficiency &amp; Design · Architectural LED</span></div>
+                <p class="card-line-text small text-muted mb-3">Architectural recessed downlights, statement pendants, energy-efficient LED upgrades, and secure fan bracket installations.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> High ceilings, dimming setups, heavy chandelier support, smart controls.
@@ -256,7 +222,7 @@
         </div>
 
         <!-- 4. Switches and Power Outlets -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -265,9 +231,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-navy mb-2">Safety Hardware</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Switches &amp; Power Outlets</h3>
-                <p class="small text-muted mb-2">Installation of GFCI outlets for wet areas, tamper-resistant receptacles for child safety, USB integrated ports, and smart dimmers.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Switches &amp; Power Outlets</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-navy">Safety Hardware · GFCI &amp; Surge</span></div>
+                <p class="card-line-text small text-muted mb-3">Installation of GFCI outlets for wet areas, tamper-resistant receptacles for child safety, USB integrated ports, and smart dimmers.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> Warm or discolored receptacles, loose plugs, missing kitchen/bath GFCI.
@@ -288,7 +254,7 @@
         </div>
 
         <!-- 5. Circuit Breaker Services -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -297,9 +263,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-electric mb-2">Protection</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Circuit Breaker Services</h3>
-                <p class="small text-muted mb-2">Upgrading nuisance tripping breakers, adding Arc-Fault Detection Devices (AFDDs), and installing whole-home surge suppressors.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Circuit Breaker Services</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-electric">Protection · AFDD &amp; Overload</span></div>
+                <p class="card-line-text small text-muted mb-3">Upgrading nuisance tripping breakers, adding Arc-Fault Detection Devices (AFDDs), and installing whole-home surge suppressors.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> Buzzing panels, burnt odor near panel, breakers that refuse to reset.
@@ -320,7 +286,7 @@
         </div>
 
         <!-- 6. Electrical Troubleshooting -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -329,9 +295,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-navy mb-2">Diagnostics</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Electrical Troubleshooting</h3>
-                <p class="small text-muted mb-2">Calibrated diagnostic investigation to locate persistent power outages, voltage drops, flickering lights, and elusive grounding faults.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Electrical Troubleshooting</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-navy">Diagnostics · Calibrated Tracing</span></div>
+                <p class="card-line-text small text-muted mb-3">Calibrated diagnostic investigation to locate persistent power outages, voltage drops, flickering lights, and elusive grounding faults.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> Intermittent electrical failures, unexplained higher utility bills, mild shocks.
@@ -352,7 +318,7 @@
         </div>
 
         <!-- 7. Safety Inspections -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -361,9 +327,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-electric mb-2">Audit &amp; Report</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Safety Inspections</h3>
-                <p class="small text-muted mb-2">Comprehensive visual and instrumental audits of home electrical infrastructure for real-estate sales, insurance, or general safety.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Safety Inspections</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-electric">Audit &amp; Report · 40-Point Standard</span></div>
+                <p class="card-line-text small text-muted mb-3">Comprehensive visual and instrumental audits of home electrical infrastructure for real-estate sales, insurance, or general safety.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> Pre-purchase property evaluations, compliance certificates, insurance policies.
@@ -384,7 +350,7 @@
         </div>
 
         <!-- 8. Preventive Maintenance -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -393,9 +359,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-navy mb-2">Proactive Care</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Preventive Maintenance</h3>
-                <p class="small text-muted mb-2">Routine tightening of terminal lugs, cleaning dust buildup in consumer units, testing smoke detector interlinks, and RCD/GFCI trip speed testing.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Preventive Maintenance</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-navy">Proactive Care · Scheduled Upkeep</span></div>
+                <p class="card-line-text small text-muted mb-3">Routine tightening of terminal lugs, cleaning dust buildup in consumer units, testing smoke detector interlinks, and RCD/GFCI trip speed testing.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> Annual property upkeep, high-value residences, elderly safety verification.
@@ -427,9 +393,9 @@
         <p class="section-desc">Engineered for commercial uptime, regulatory compliance, and scalable power distribution. Handled exclusively by commercial-qualified technicians.</p>
       </div>
 
-      <div class="row g-4">
+      <div class="row g-4 card-grid-row">
         <!-- 1. Office Electrical Installation -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -438,9 +404,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-navy mb-2">Commercial Core</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Office Electrical Installation</h3>
-                <p class="small text-muted mb-2">Turnkey power distribution for corporate offices, dedicated server room circuits, underfloor cable management, and clean power for IT infrastructure.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Office Electrical Installation</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-navy">Commercial Core · Workspace Distribution</span></div>
+                <p class="card-line-text small text-muted mb-3">Turnkey power distribution for corporate offices, dedicated server room circuits, underfloor cable management, and clean power for IT infrastructure.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> New tenant fit-outs, workstation reconfigurations, server rack feeds.
@@ -461,7 +427,7 @@
         </div>
 
         <!-- 2. Commercial Lighting Systems -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -470,9 +436,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-electric mb-2">Efficiency &amp; Control</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Commercial Lighting Systems</h3>
-                <p class="small text-muted mb-2">High-efficiency LED high-bays for warehouses, automated daylight harvesting, DALI/0-10V intelligent dimming controls, and retail accent lighting.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Commercial Lighting Systems</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-electric">Efficiency &amp; Control · DALI &amp; High-Bays</span></div>
+                <p class="card-line-text small text-muted mb-3">High-efficiency LED high-bays for warehouses, automated daylight harvesting, DALI/0-10V intelligent dimming controls, and retail accent lighting.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> Energy reduction retrofits, smart sensor controls, emergency exit route compliance.
@@ -493,7 +459,7 @@
         </div>
 
         <!-- 3. Electrical Distribution Systems -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -502,9 +468,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-navy mb-2">Heavy Infrastructure</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Distribution Systems</h3>
-                <p class="small text-muted mb-2">Design, load calculations, and installation of 3-phase commercial main switchboards, busbar trunking, MCCBs, and sub-metering infrastructure.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Distribution Systems</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-navy">Heavy Infrastructure · 3-Phase Switchgear</span></div>
+                <p class="card-line-text small text-muted mb-3">Design, load calculations, and installation of 3-phase commercial main switchboards, busbar trunking, MCCBs, and sub-metering infrastructure.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> Heavy machinery power supply, building expansion, sub-panel upgrades.
@@ -525,7 +491,7 @@
         </div>
 
         <!-- 4. Electrical Panel Maintenance -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -534,9 +500,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-electric mb-2">Reliability</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Electrical Panel Maintenance</h3>
-                <p class="small text-muted mb-2">Systematic servicing of commercial distribution boards, busbars, circuit breakers, and trip units during planned maintenance outages.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Electrical Panel Maintenance</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-electric">Reliability · Thermography &amp; Torque</span></div>
+                <p class="card-line-text small text-muted mb-3">Systematic servicing of commercial distribution boards, busbars, circuit breakers, and trip units during planned maintenance outages.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> Scheduled annual shutdowns, warm terminal diagnosis, compliance verification.
@@ -557,7 +523,7 @@
         </div>
 
         <!-- 5. Commercial Fault Diagnosis -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -566,9 +532,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-navy mb-2">Advanced Diagnostics</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Commercial Fault Diagnosis</h3>
-                <p class="small text-muted mb-2">Rapid, systematic diagnosis of production line power interruptions, neutral unbalances, harmonic distortions, and intermittent system shutdowns.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Commercial Fault Diagnosis</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-navy">Advanced Diagnostics · Power Quality Logging</span></div>
+                <p class="card-line-text small text-muted mb-3">Rapid, systematic diagnosis of production line power interruptions, neutral unbalances, harmonic distortions, and intermittent system shutdowns.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> Unplanned manufacturing downtime, unexplained machinery tripping.
@@ -589,7 +555,7 @@
         </div>
 
         <!-- 6. Commercial Wiring -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -598,9 +564,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-electric mb-2">Containment &amp; Cable</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Commercial Wiring</h3>
-                <p class="small text-muted mb-2">Installation of galvanized steel conduits, metal trunking, cable ladders, armored (SWA) cables, and fire-resistant (FP200) critical lines.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Commercial Wiring</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-electric">Containment &amp; Cable · SWA &amp; Trunking</span></div>
+                <p class="card-line-text small text-muted mb-3">Installation of galvanized steel conduits, metal trunking, cable ladders, armored (SWA) cables, and fire-resistant (FP200) critical lines.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> Warehouse wiring, plant rooms, exterior lighting runs, plant machine tie-ins.
@@ -621,7 +587,7 @@
         </div>
 
         <!-- 7. Routine Electrical Inspections (EICR) -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -630,9 +596,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-navy mb-2">Statutory Audit</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Routine Electrical Inspections</h3>
-                <p class="small text-muted mb-2">Certified Electrical Installation Condition Reports (EICR) fulfilling statutory occupational safety and commercial insurer regulations.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Routine Electrical Inspections</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-navy">Statutory Audit · EICR Compliance</span></div>
+                <p class="card-line-text small text-muted mb-3">Certified Electrical Installation Condition Reports (EICR) fulfilling statutory occupational safety and commercial insurer regulations.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> 3-year or 5-year statutory commercial renewal, landlord legal compliance.
@@ -653,7 +619,7 @@
         </div>
 
         <!-- 8. Maintenance Support Contracts -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 card-grid-col">
           <div class="service-card p-4">
             <div class="row g-4 align-items-center">
               <div class="col-sm-5">
@@ -662,9 +628,9 @@
                 </div>
               </div>
               <div class="col-sm-7">
-                <span class="badge-custom badge-electric mb-2">Contract Support</span>
-                <h3 class="h4 fw-bold text-navy mb-2">Maintenance Support</h3>
-                <p class="small text-muted mb-2">Customized Service Level Agreements (SLAs) for retail chains, commercial offices, and educational campuses requiring dedicated electrical support.</p>
+                <h3 class="card-line-heading h4 fw-bold text-navy mb-1">Maintenance Support</h3>
+                <div class="card-line-subheading mb-2"><span class="badge-custom badge-electric">Contract Support · Dedicated SLAs</span></div>
+                <p class="card-line-text small text-muted mb-3">Customized Service Level Agreements (SLAs) for retail chains, commercial offices, and educational campuses requiring dedicated electrical support.</p>
                 
                 <div class="small mb-2">
                   <strong class="text-navy">Common Needs:</strong> Multi-site facilities management, scheduled quarterly audits, emergency triage.
@@ -708,31 +674,51 @@
     </div>
   </section>
 
-  <!-- Standard Contractor Footer -->
+  <!-- Standard Contractor Footer (White Theme with Social Icons & Unified Brand) -->
   <footer class="spark-footer">
     <div class="container">
       <!-- Compliance & Regulatory Disclaimer Note -->
       <div class="compliance-disclaimer-note">
         <div class="d-flex align-items-start gap-2">
-          <i class="bi bi-info-circle text-info fs-5 mt-1"></i>
+          <i class="bi bi-info-circle text-primary fs-5 mt-1"></i>
           <div>
-            <strong class="text-white">Professional Operating Disclosure:</strong> SPARK FIX provides professional electrical contracting services adhering to statutory national electrical safety codes. Website submissions constitute formal booking enquiries subject to technical assessment, safety scope determination, and contractor availability. All field work is performed by qualified personnel using verified safe-isolation procedures.
+            <strong class="text-navy">Professional Operating Disclosure:</strong> SPARK FIX provides professional electrical contracting services adhering to statutory national electrical safety codes. Website submissions constitute formal booking enquiries subject to technical assessment, safety scope determination, and contractor availability. All field work is performed by qualified personnel using verified safe-isolation procedures.
           </div>
         </div>
       </div>
 
       <div class="row g-4 mb-4">
         <div class="col-lg-4">
-          <div class="footer-brand-title d-flex align-items-center gap-2">
-            <div class="brand-icon-wrapper" style="width:34px;height:34px;font-size:1rem;">
+          <!-- Exact Same Brand Component as Navbar -->
+          <a class="spark-brand mb-3 d-inline-flex" href="index.html">
+            <div class="brand-icon-wrapper">
               <i class="bi bi-lightning-charge-fill"></i>
             </div>
-            <span>SPARK<span class="text-primary">FIX</span></span>
-          </div>
-          <p class="small text-white-50 mb-3">Powering Your Spaces. Protecting What Matters.</p>
-          <p class="small text-white-50 mb-3">Dedicated residential and commercial electrical contracting, installations, compliance audits, and urgent technical support.</p>
-          <div class="d-flex gap-2 text-white-50">
-            <span class="badge-custom badge-placeholder text-white-50">Licence: Placeholder #EC-98442</span>
+            <div>
+              <span class="brand-text-spark">SPARK</span><span class="brand-text-fix">FIX</span>
+              <span class="brand-tagline-sub">Electrical Services</span>
+            </div>
+          </a>
+          <p class="small text-muted mb-2 fw-medium">Powering Your Spaces. Protecting What Matters.</p>
+          <p class="small text-muted mb-3">Dedicated residential and commercial electrical contracting, installations, compliance audits, and urgent technical support.</p>
+          
+          <!-- Social Icons with Hover -->
+          <div class="footer-social-group mt-3">
+            <a href="https://facebook.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://twitter.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://linkedin.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://instagram.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://youtube.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
           </div>
         </div>
 
@@ -765,22 +751,22 @@
           <div class="footer-contact-item">
             <i class="bi bi-geo-alt-fill"></i>
             <div>
-              <strong class="text-white d-block">Headquarters &amp; Operations Center</strong>
-              <span class="text-white-50">400 Industrial Parkway, Suite 102, Metro Hub</span>
+              <strong class="text-navy d-block">Headquarters &amp; Operations Center</strong>
+              <span class="text-muted">400 Industrial Parkway, Suite 102, Metro Hub</span>
             </div>
           </div>
           <div class="footer-contact-item">
             <i class="bi bi-telephone-fill"></i>
             <div>
-              <strong class="text-white d-block">General Enquiries &amp; Scheduling</strong>
-              <a href="tel:8005557727" class="text-white-50">(800) 555-SPARK / (800) 555-7727</a>
+              <strong class="text-navy d-block">General Enquiries &amp; Scheduling</strong>
+              <a href="tel:8005557727" class="text-muted">(800) 555-SPARK / (800) 555-7727</a>
             </div>
           </div>
           <div class="footer-contact-item">
             <i class="bi bi-envelope-fill"></i>
             <div>
-              <strong class="text-white d-block">Email Correspondence</strong>
-              <span class="text-white-50">enquiries@sparkfix-electrical.com</span>
+              <strong class="text-navy d-block">Email Correspondence</strong>
+              <span class="text-muted">enquiries@sparkfix-electrical.com</span>
             </div>
           </div>
         </div>
@@ -791,9 +777,9 @@
           &copy; 2026 SPARK FIX Electrical Services. All rights reserved.
         </div>
         <div class="d-flex gap-3">
-          <a href="contact-booking.html" class="text-white-50">Privacy Statement</a>
-          <a href="contact-booking.html" class="text-white-50">Terms of Engagement</a>
-          <a href="about-safety.html#safety" class="text-white-50">Safety Charter</a>
+          <a href="contact-booking.html">Privacy Statement</a>
+          <a href="contact-booking.html">Terms of Engagement</a>
+          <a href="about-safety.html#safety">Safety Charter</a>
         </div>
       </div>
     </div>

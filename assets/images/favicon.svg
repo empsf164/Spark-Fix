@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+  <defs>
+    <linearGradient id="sparkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14283D" />
+      <stop offset="100%" stop-color="#2878C7" />
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Rect -->
+  <rect width="40" height="40" rx="8" ry="8" fill="url(#sparkGradient)" />
+  <!-- Lightning Charge Bolt Icon -->
+  <path d="M22.5 7L11 21.5H19L17.5 33L29 18.5H21L22.5 7Z" fill="#ffffff" />
+</svg>
+
